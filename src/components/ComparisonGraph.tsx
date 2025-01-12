@@ -1,5 +1,4 @@
-import { Area, AreaChart, ResponsiveContainer, XAxis, YAxis } from 'recharts';
-
+import { Area, AreaChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 interface ComparisonGraphProps {
   percentile: number;
 }
@@ -50,6 +49,7 @@ export default function ComparisonGraph({ percentile }: ComparisonGraphProps) {
               fillOpacity={1}
               fill="url(#colorValue)"
             />
+            <Tooltip />
           </AreaChart>
         </ResponsiveContainer>
       </div>
