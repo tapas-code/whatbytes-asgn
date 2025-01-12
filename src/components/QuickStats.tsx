@@ -1,4 +1,4 @@
-import { Trophy, ClipboardCheck } from 'lucide-react';
+import { Trophy, ClipboardCheck, CalendarRange } from 'lucide-react';
 
 interface QuickStatsProps {
   stats: {
@@ -22,7 +22,7 @@ export default function QuickStats({ stats }: QuickStatsProps) {
         </div>
         
         <div className="flex items-center gap-4">
-          <div className="w-8 h-8 bg-gray-200 rounded" />
+        <CalendarRange className="w-8 h-8 text-gray-500" />
           <div>
             <div className="text-2xl font-bold">{stats.percentile}%</div>
             <div className="text-gray-500 text-sm">PERCENTILE</div>
